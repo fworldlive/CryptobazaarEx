@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptobazaar - Crypto Exchange & Staking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px;
+            padding: 0px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333; /* Deep blue */
+            color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: linear-gradient(to right, #000000, #434343);
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 20px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #ffd700; /* Gold */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Gold */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a237e, #3f51b5);
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1rem;
+            background-color: #ffd700;
+            color: #1a237e;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fbc02d;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1a237e;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a237e;
+        }
+
+        #terms ul {
+            list-style: disc;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        #contact p {
+            margin-bottom: 1rem;
+        }
+
+        #contact a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a237e;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer .social-links {
+            margin-top: 1rem;
+        }
+
+        footer .social-links a {
+            margin: 0 10px;
+        }
+
+        footer .social-links img {
+            width: 30px;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Cryptobazaar Logo">
+                <h1>Cryptobazaar</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Cryptobazaar</h2>
+            <p>Your trusted platform for exchanging INR to USDT and staking for high returns.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Cryptobazaar is a leading cryptocurrency exchange platform based in Mumbai, India. We specialize in providing seamless conversion of Indian Rupees (INR) to Tether (USDT) and offer flexible staking options to maximize your crypto earnings. Our mission is to make cryptocurrency accessible, secure, and profitable for everyone.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>INR to USDT Exchange</h3>
+                    <p>Effortlessly convert your Indian Rupees to USDT with competitive rates and fast processing.</p>
+                </div>
+                <div class="service-card">
+                    <h3>USDT Staking</h3>
+                    <p>Stake your USDT for 30, 90, or 180 days and earn attractive returns on your investment.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Secure Platform</h3>
+                    <p>Our platform uses advanced security measures to protect your funds and personal information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Section -->
+    <section id="terms" class="section">
+        <div class="container">
+            <h2>Terms & Conditions</h2>
+            <p>By using Cryptobazaar, you agree to comply with our terms of service. Key points include:</p>
+            <ul>
+                <li>Users must be 18 years or older to use our services.</li>
+                <li>All transactions are subject to verification and compliance with KYC/AML regulations.</li>
+                <li>Staking returns are subject to market conditions and are not guaranteed.</li>
+                <li>Cryptobazaar is not liable for losses due to market volatility or user errors.</li>
+                <li>For full terms, please contact our support team.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Location:</strong> Mumbai, India</p>
+            <p><strong>Support Email:</strong> <a href="mailto:cryptobazaar.ex@gmail.com">cryptobazaar.ex@gmail.com</a></p>
+            <p><strong>Social Media:</strong> Follow us on <a href="https://www.instagram.com/cryptobazaar.exchange?igsh=MWR6Z2htbHhmN3oycQ==" target="_blank">Instagram</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Cryptobazaar. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/cryptobazaar.exchange?igsh=MWR6Z2htbHhmN3oycQ==" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
