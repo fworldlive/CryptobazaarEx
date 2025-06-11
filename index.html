@@ -3,117 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CryptoBazaar | Trusted USDT to INR Exchange</title>
-  <link rel="stylesheet" href="style.css">
+  <title>CryptoBazaar.Exchange – Trusted Indian USDT Exchange</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d0d0d;
-      color: white;
+      background-color: #f8f9fa;
+      color: #333;
     }
+
     header {
-      background-color: #121212;
-      padding: 20px;
+      background-color: #0d1a26;
+      padding: 15px 20px;
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #333;
     }
+
     header h1 {
+      margin: 0;
       font-size: 24px;
-      color: #00ffcc;
     }
+
     nav a {
       color: white;
-      text-decoration: none;
       margin-left: 20px;
+      text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background-image: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+
+    nav a:hover {
+      text-decoration: underline;
     }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
     .hero h2 {
       font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .hero a {
-      padding: 12px 24px;
-      background-color: #00ffcc;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 60px 20px;
-      background-color: #111;
-    }
-    .feature {
-      flex: 1;
-      max-width: 300px;
-      margin: 20px;
-      background-color: #1b1b1b;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-    .feature h3 {
-      color: #00ffcc;
       margin-bottom: 10px;
     }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .buy-box, .sell-box {
+      padding: 25px;
+      color: white;
+      border-radius: 8px;
+      width: 45%;
+      box-sizing: border-box;
+    }
+
+    .buy-box {
+      background-color: #28a745;
+    }
+
+    .sell-box {
+      background-color: #dc3545;
+    }
+
+    .buy-sell {
+      display: flex;
+      justify-content: space-between;
+      gap: 5%;
+      flex-wrap: wrap;
+    }
+
+    .locations, .contact, .footer {
+      background-color: #e9ecef;
+      padding: 30px 20px;
+      border-radius: 10px;
+    }
+
     footer {
+      background-color: #0d1a26;
+      color: white;
       text-align: center;
-      padding: 20px;
-      background-color: #121212;
-      border-top: 1px solid #333;
-      font-size: 14px;
-      color: #aaa;
+      padding: 15px;
+    }
+
+    h3 {
+      color: #0d1a26;
+    }
+
+    @media (max-width: 768px) {
+      .buy-sell {
+        flex-direction: column;
+      }
+      .buy-box, .sell-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>CryptoBazaar</h1>
+    <h1>CryptoBazaar.Exchange</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#exchange">Exchange</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#terms">Terms</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Trusted USDT to INR Exchange</h2>
-    <p>Fast. Secure. Reliable. Exchange your USDT directly to INR instantly.</p>
-    <a href="#exchange">Start Exchange</a>
+    <h2>Trusted Indian USDT Exchange</h2>
+    <p>Convert INR ⇄ USDT seamlessly at genuine and competitive rates</p>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>Instant Transactions</h3>
-      <p>Exchange USDT to INR in seconds. Get your INR directly to your bank account.</p>
-    </div>
-    <div class="feature">
-      <h3>Secure & Private</h3>
-      <p>We prioritize your privacy and protect your data using advanced encryption.</p>
-    </div>
-    <div class="feature">
-      <h3>Trusted by Thousands</h3>
-      <p>Join our growing community of satisfied users all across India.</p>
-    </div>
-  </section>
+  <div class="container">
+
+    <section id="about" class="section">
+      <h3>About Us</h3>
+      <p>Cryptobazaar.exchange is a trusted Indian cryptocurrency exchange platform, specializing in the seamless conversion of <strong>USDT into INR</strong> and <strong>INR into USDT</strong> at genuine and competitive rates.</p>
+      <p>Founded over 5 years ago, we have established ourselves in the Indian crypto industry, earning the trust of thousands of users through our transparent, secure, and user-friendly services.</p>
+      <p>Our platform requires mandatory <strong>KYC verification</strong> to ensure a secure trading experience for all users.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h3>Buy and Sell USDT</h3>
+      <div class="buy-sell">
+        <div class="buy-box">
+          <h4>Buy USDT</h4>
+          <p>Buy USDT at best market rates. Instant INR to USDT conversion with verified KYC. Secure and fast transactions.</p>
+        </div>
+        <div class="sell-box">
+          <h4>Sell USDT</h4>
+          <p>Sell your USDT and receive INR directly in your bank account. Transparent pricing and 24/7 support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations section">
+      <h3>Our Locations</h3>
+      <ul>
+        <li>✅ Mumbai</li>
+        <li>✅ Delhi</li>
+        <li>✅ Bangalore</li>
+        <li>✅ Kolkata</li>
+      </ul>
+      <p>We are expanding across India through franchise partnerships. Join our journey today!</p>
+    </section>
+
+    <section id="terms" class="section">
+      <h3>Terms and Conditions</h3>
+      <p>All users must complete KYC verification before accessing trading services. Rates are subject to market conditions. We ensure full compliance with Indian financial regulations. For full details, please contact our support team.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h3>Contact Us</h3>
+      <p>📧 Email: <a href="mailto:cryptobazaar.ex@gmail.com">cryptobazaar.ex@gmail.com</a></p>
+      <p>We’re here to help you 24/7 with any queries related to buying or selling USDT securely in India.</p>
+    </section>
+
+  </div>
 
   <footer>
-    &copy; 2025 CryptoBazaar. All rights reserved.
+    &copy; 2025 Cryptobazaar.exchange | All rights reserved.
   </footer>
+
 </body>
 </html>
