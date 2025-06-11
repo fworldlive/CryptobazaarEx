@@ -1,0 +1,9 @@
+📁 your-repo/
+├── 📁 docs/
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── services.html
+│   ├── terms.html
+│   ├── 📁 css/
+│   └── (other assets like images)
