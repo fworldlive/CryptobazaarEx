@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Bazaar - USD to INR</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <style>
+    body {
+      background: linear-gradient(145deg, #111827, #1f2937);
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-black/70 border-b border-gray-700">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M2 17l10 5 10-5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+        <h1 class="text-xl font-bold">Crypto Bazaar</h1>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#exchange" class="hover:text-emerald-400 transition">Exchange</a>
+        <a href="#features" class="hover:text-emerald-400 transition">Features</a>
+        <a href="#faq" class="hover:text-emerald-400 transition">FAQ</a>
+        <button class="px-4 py-2 rounded bg-emerald-500 hover:bg-emerald-600 transition">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-4 container mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Buy and Sell USD to INR</h2>
+    <p class="text-gray-300 max-w-xl mx-auto mb-8">
+      Fast, secure, and reliable crypto trading platform for converting USD to INR using USDT.
+    </p>
+    <a href="#exchange" class="inline-block px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-full font-medium">
+      Start Trading Now
+    </a>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-12 bg-gray-800/30">
+    <div class="container mx-auto grid md:grid-cols-3 gap-6 text-center">
+      <div>
+        <div class="text-2xl font-bold text-emerald-400">₹83.5</div>
+        <p class="text-gray-400 mt-1">USD to INR Rate</p>
+      </div>
+      <div>
+        <div class="text-2xl font-bold text-emerald-400">+2.5%</div>
+        <p class="text-gray-400 mt-1">Market Change</p>
+      </div>
+      <div>
+        <div class="text-2xl font-bold text-emerald-400">24/7</div>
+        <p class="text-gray-400 mt-1">Live Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exchange Section -->
+  <section id="exchange" class="py-24 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Convert USD to INR</h2>
+    <div class="max-w-lg mx-auto bg-gray-800/50 p-8 rounded-xl shadow-lg border border-gray-700">
+      <div class="mb-6">
+        <label class="block text-sm text-gray-400 mb-2">Amount in USD</label>
+        <input type="number" id="usdInput" placeholder="0.00" 
+               class="w-full p-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+               oninput="convertUSDToINR()" />
+      </div>
+
+      <div class="flex justify-center my-4">
+        <div class="p-2 rounded-full bg-gray-700">
+          <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-sm text-gray-400 mb-2">Amount in INR</label>
+        <input type="number" id="inrInput" placeholder="0.00"
+               class="w-full p-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+               oninput="convertINRToUSD()" />
+      </div>
+
+      <button onclick="swapValues()" class="mt-4 w-full py-3 bg-emerald-500 hover:bg-emerald-600 rounded font-medium transition">
+        Swap
+      </button>
+      <p class="mt-4 text-center text-sm text-gray-400">
+        Rate: $1 = ₹83.5 | Powered by USDT
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 bg-gray-800/30">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-16">Why Choose Crypto Bazaar?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
+            <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Secure Transactions</h3>
+          <p class="text-gray-400">Your funds are protected with advanced security measures.</p>
+        </div>
+        <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
+            <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Fast Processing</h3>
+          <p class="text-gray-400">Instant conversion with lightning-fast transaction speed.</p>
+        </div>
+        <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
+            <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Trusted Platform</h3>
+          <p class="text-gray-400">Used by thousands of traders globally for daily transactions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-24 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <details class="group bg-gray-800/50 p-4 rounded cursor-pointer">
+        <summary class="list-none flex justify-between items-center font-medium py-2">
+          How do I start trading?
+          <span class="transition group-open:rotate-180">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-gray-400 pt-2 pb-4">Sign up, verify your identity, deposit funds, and you're ready to trade.</p>
+      </details>
+      <details class="group bg-gray-800/50 p-4 rounded cursor-pointer">
+        <summary class="list-none flex justify-between items-center font-medium py-2">
+          What is the minimum transaction?
+          <span class="transition group-open:rotate-180">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-gray-400 pt-2 pb-4">Minimum transaction is $10 or equivalent in INR.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 border-t border-gray-800">
+    <div class="container mx-auto text-center text-gray-500">
+      &copy; {new Date().getFullYear()} Crypto Bazaar. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function convertUSDToINR() {
+      const usd = parseFloat(document.getElementById("usdInput").value) || 0;
+      document.getElementById("inrInput").value = (usd * 83.5).toFixed(2);
+    }
+
+    function convertINRToUSD() {
+      const inr = parseFloat(document.getElementById("inrInput").value) || 0;
+      document.getElementById("usdInput").value = (inr / 83.5).toFixed(2);
+    }
+
+    function swapValues() {
+      const usd = document.getElementById("usdInput").value;
+      const inr = document.getElementById("inrInput").value;
+      document.getElementById("usdInput").value = inr;
+      document.getElementById("inrInput").value = usd;
+    }
+  </script>
+
+</body>
+</html>
